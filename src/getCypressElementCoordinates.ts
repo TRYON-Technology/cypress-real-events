@@ -100,7 +100,10 @@ function getIframesPositionShift(element: HTMLElement) {
   const iframes = [];
 
   while (currentWindow !== window.top) {
-    iframes.push(getFrameElement(currentWindow));
+    var iframe = getFrameElement(currentWindow)
+    if(iframe) {
+        iframes.push(iframe);
+    }
     currentWindow = currentWindow.parent;
   }
 
