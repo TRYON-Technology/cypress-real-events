@@ -34,5 +34,7 @@
     "branches": [
       "main"
     ]
-  }
+  },
+  "main": "./support.js",
+  "typings": "./index.d.ts"
 }
